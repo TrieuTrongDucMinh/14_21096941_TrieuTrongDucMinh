@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bump Shop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#LaptopHP").click(function() {
+                $("#btnLaptopHP").modal('show');
+            })
+        })
+
+        $(document).ready(function() {
+            $("#LaptopDell").click(function() {
+                $("#btnLaptopDell").modal('show');
+            })
+        })
+
+        $(document).ready(function() {
+            $("#LaptopAsus").click(function() {
+                $("#btnLaptopAsus").modal('show');
+            })
+        })
+
+        $(document).ready(function() {
+            $("#Macair").click(function() {
+                $("#btnMacair").modal('show');
+            })
+        })
+
+        $(document).ready(function() {
+            $("#Lenovo").click(function() {
+                $("#btnLenovo").modal('show');
+            })
+        })
+
+        $(document).ready(function() {
+            $("#DellGame").click(function() {
+                $("#btnDellGame").modal('show');
+            })
+        })
+
+        $(document).ready(function() {
+            $("#MSI").click(function() {
+                $("#btnMSI").modal('show');
+            })
+        })
+
+        $(document).ready(function() {
+            $("#Acer").click(function() {
+                $("#btnAcer").modal('show');
+            })
+        })
+
+        $(document).ready(function() {
+            $("#Macpro").click(function() {
+                $("#btnMacpro").modal('show');
+            })
+        })
+
+        function addToCart() {
+            alert("Item has been added to cart!");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Bump Shop</h1>
+        <nav>
+            <ul>
+                <li><a id="" href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Our Products</h2>
+        <div id="products">
+            <div class="product">
+                <img src="../img/Laptop HP 15s fq2716TU i3.jpg">
+                <h3>Laptop HP 15s fq2716TU i3</h3>
+                <p>Price: 8.920.000₫</p>
+                Vote: <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
+                <label for="quantity">Sold out:</label>
+                <input style="border: none; background-color: #f2f2f2;" type="number" id="quantity" name="quantity" min="1" max="100" value="25">
+                <ul class="navbar navbar-nav navbar-expand">
+                    <li class="navbar-item"><a class="navbar-link" href="#" id="LaptopHP">Details</a></li>
+                    <li class="navbar-item"><button style="border: none; width: 100px;" class="buy-btn" onclick="addToCart()">Add to Cart</button></li>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="../img/Laptop Dell Inspiron 15 3520 i5.webp">
+                <h3>Laptop Dell Inspiron 15 3520 i5</h3>
+                <p>Price: 15.990.000₫</p>
+                Vote: <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
+                <label for="quantity">Sold out:</label>
+                <input style="border: none; background-color: #f2f2f2;" type="number" id="quantity" name="quantity" min="1" max="100" value="63">
+                <ul class="navbar navbar-nav navbar-expand">
+                    <li class="navbar-item"><a class="navbar-link" href="#" id="LaptopDell">Details</a></li>
+                    <li class="navbar-item"><button style="border: none; width: 100px;" class="buy-btn" onclick="addToCart()">Add to Cart</button></li>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="../img/Laptop Asus Vivobook X415EA i3.jpg">
+                <h3>Laptop Asus Vivobook X415EA i3</h3>
+                <p>Price: 9.690.000₫</p>
+                Vote: <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>
+                <label for="quantity">Sold out:</label>
+                <input style="border: none; background-color: #f2f2f2;" type="number" id="quantity" name="quantity" min="1" max="100" value="42">
+                <ul class="navbar navbar-nav navbar-expand">
+                    <li class="navbar-item"><a class="navbar-link" href="#" id="LaptopAsus">Details</a></li>
+                    <li class="navbar-item"><button style="border: none; width: 100px;" class="buy-btn" onclick="addToCart()">Add to Cart</button></li>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="../img/Laptop Apple MacBook Air M1 2020.jfif">
+                <h3>Laptop Apple MacBook Air M1 2020</h3>
+                <p>Price: 18.490.000₫</p>
+                Vote: <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>
+                <label for="quantity">Sold out:</label>
+                <input style="border: none; background-color: #f2f2f2;" type="number" id="quantity" name="quantity" min="1" max="100" value="25">
+                <ul class="navbar navbar-nav navbar-expand">
+                    <li class="navbar-item"><a class="navbar-link" href="#" id="Macair">Details</a></li>
+                    <li class="navbar-item"><button style="border: none; width: 100px;" class="buy-btn" onclick="addToCart()">Add to Cart</button></li>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="../img/Laptop Lenovo IdeaPad 1 15AMN7 R5.jpg">
+                <h3>Laptop Lenovo IdeaPad 1 15AMN7 R5</h3>
+                <p>Price: 9.990.000₫</p>
+                Vote: <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
+                <label for="quantity">Sold out:</label>
+                <input style="border: none; background-color: #f2f2f2;" type="number" id="quantity" name="quantity" min="1" max="100" value="12">
+                <ul class="navbar navbar-nav navbar-expand">
+                    <li class="navbar-item"><a class="navbar-link" href="#" id="Lenovo">Details</a></li>
+                    <li class="navbar-item"><button style="border: none; width: 100px;" class="buy-btn" onclick="addToCart()">Add to Cart</button></li>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="../img/Laptop Dell Gaming G15 5511 i5.webp">
+                <h3>Laptop Dell Gaming G15 5511 i5</h3>
+                <p>Price: 21.990.000₫</p>
+                Vote: <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>
+                <label for="quantity">Sold out:</label>
+                <input style="border: none; background-color: #f2f2f2;" type="number" id="quantity" name="quantity" min="1" max="100" value="44">
+                <ul class="navbar navbar-nav navbar-expand">
+                    <li class="navbar-item"><a class="navbar-link" href="#" id="DellGame">Details</a></li>
+                    <li class="navbar-item"><button style="border: none; width: 100px;" class="buy-btn" onclick="addToCart()">Add to Cart</button></li>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="../img/Laptop MSI Gaming GS66 Stealth 11UG i7.webp">
+                <h3>Laptop MSI Gaming GS66 Stealth 11UG i7</h3>
+                <p>Price: 52.490.000₫</p>
+                Vote: <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
+                <label for="quantity">Sold out:</label>
+                <input style="border: none; background-color: #f2f2f2;" type="number" id="quantity" name="quantity" min="1" max="100" value="24">
+                <ul class="navbar navbar-nav navbar-expand">
+                    <li class="navbar-item"><a class="navbar-link" href="#" id="MSI">Details</a></li>
+                    <li class="navbar-item"><button style="border: none; width: 100px;" class="buy-btn" onclick="addToCart()">Add to Cart</button></li>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="../img/Laptop Acer Aspire 3 A315 56 32TP i3.jpg">
+                <h3>Laptop Acer Aspire 3 A315 56 32TP i3</h3>
+                <p>Price: $6.990.000₫</p>
+                Vote: <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>
+                <label for="quantity">Sold out:</label>
+                <input style="border: none; background-color: #f2f2f2;" type="number" id="quantity" name="quantity" min="1" max="100" value="54">
+                <ul class="navbar navbar-nav navbar-expand">
+                    <li class="navbar-item"><a class="navbar-link" href="#" id="Acer">Details</a></li>
+                    <li class="navbar-item"><button style="border: none; width: 100px;" class="buy-btn" onclick="addToCart()">Add to Cart</button></li>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="../img/Laptop Apple MacBook Air M1 2020.jfif">
+                <h3>Laptop Apple MacBook Pro M2 2022</h3>
+                <p>Price: 33.590.000₫</p>
+                Vote: <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>
+                <label for="quantity">Sold out:</label>
+                <input style="border: none; background-color: #f2f2f2;" type="number" id="quantity" name="quantity" min="1" max="100" value="23">
+                <ul class="navbar navbar-nav navbar-expand">
+                    <li class="navbar-item"><a class="navbar-link" href="#" id="Macpro">Details</a></li>
+                    <li class="navbar-item"><button style="border: none; width: 100px;" class="buy-btn" onclick="addToCart()">Add to Cart</button></li>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="../img/1783883_main.jpg_480Wx480H">
+                <h3>Laptop HP 15s fq2716TU i3</h3>
+                <p>Price: 8.920.000₫</p>
+                Vote: <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
+                <label for="quantity">Sold out:</label>
+                <input style="border: none; background-color: #f2f2f2;" type="number" id="quantity" name="quantity" min="1" max="100" value="25">
+                <ul class="navbar navbar-nav navbar-expand">
+                    <li class="navbar-item"><a class="navbar-link" href="#" id="LaptopHP">Details</a></li>
+                    <li class="navbar-item"><button style="border: none; width: 100px;" class="buy-btn" onclick="addToCart()">Add to Cart</button></li>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="../img/HP.jpg">
+                <h3>Laptop Dell Inspiron 15 3520 i5</h3>
+                <p>Price: 15.990.000₫</p>
+                Vote: <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
+                <label for="quantity">Sold out:</label>
+                <input style="border: none; background-color: #f2f2f2;" type="number" id="quantity" name="quantity" min="1" max="100" value="63">
+                <ul class="navbar navbar-nav navbar-expand">
+                    <li class="navbar-item"><a class="navbar-link" href="#" id="LaptopDell">Details</a></li>
+                    <li class="navbar-item"><button style="border: none; width: 100px;" class="buy-btn" onclick="addToCart()">Add to Cart</button></li>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="../img/7559-laptop-tcc.jpg">
+                <h3>Laptop Asus Vivobook X415EA i3</h3>
+                <p>Price: 9.690.000₫</p>
+                Vote: <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>
+                <label for="quantity">Sold out:</label>
+                <input style="border: none; background-color: #f2f2f2;" type="number" id="quantity" name="quantity" min="1" max="100" value="42">
+                <ul class="navbar navbar-nav navbar-expand">
+                    <li class="navbar-item"><a class="navbar-link" href="#" id="LaptopAsus">Details</a></li>
+                    <li class="navbar-item"><button style="border: none; width: 100px;" class="buy-btn" onclick="addToCart()">Add to Cart</button></li>
+                </ul>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; 2023 Bump Shop</p>
+    </footer>
+
+    <div class="modal fade" role="dialog" id="btnLaptopHP">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>THÔNG TIN  CHI TIẾT SẢN PHẨM</h2>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="../img/detail/Hp15.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="btnLaptopDell">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>THÔNG TIN  CHI TIẾT SẢN PHẨM</h2>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="../img/detail/Dell.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="btnLaptopAsus">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>THÔNG TIN  CHI TIẾT SẢN PHẨM</h2>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="../img/detail/Asus.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="btnMacair">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>THÔNG TIN  CHI TIẾT SẢN PHẨM</h2>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="../img/detail/Macbook.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="btnLenovo">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>THÔNG TIN  CHI TIẾT SẢN PHẨM</h2>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="../img/detail/Lennovo.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="btnDellGame">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>THÔNG TIN  CHI TIẾT SẢN PHẨM</h2>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="../img/detail/Dellgaming.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="btnMSI">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>THÔNG TIN  CHI TIẾT SẢN PHẨM</h2>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="../img/detail/MSI.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="btnAcer">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>THÔNG TIN  CHI TIẾT SẢN PHẨM</h2>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="../img/detail/acer.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="btnMacpro">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>THÔNG TIN  CHI TIẾT SẢN PHẨM</h2>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="../img/detail/MacbookPro.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
